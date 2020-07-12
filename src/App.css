@@ -1,10 +1,23 @@
 .App {
   text-align: center;
 }
-
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+body{
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden; 
+ 
+}
+.bgpro{
+  background-image: url('./image/login_bottom.png');
+  background-size: cover;
+  background-repeat:no;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+.back{
+  background:#FAF5FF;
 }
 
 @media (prefers-reduced-motion: no-preference) {

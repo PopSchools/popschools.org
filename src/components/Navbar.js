@@ -4,11 +4,12 @@ import '../css/tailwind.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import 'bulma/css/bulma.css'
+import '../App.css';
 AOS.init();
 function Navbar(){
   const [scrolling, setScrolling] = useState(false);
   const [scrollTop, setScrollTop] = useState(0);
-  const [status, setStatus] =useState('navbar bg-transparent is-transparent shadow ');
+  const [status, setStatus] =useState('navbar is-transparent has-background-light back ');
   
 
 
@@ -19,11 +20,11 @@ function Navbar(){
         // downscroll code
         console.log(currentPosition)
         // setScrolling(true);
-        setStatus('navbar is-transparent  is-fixed-top bg-purple-200 shadow');
+        setStatus('navbar is-transparent bg-white  is-fixed-top bg-purple-100 shadow ');
       } else {
         // upscroll code
         setScrolling(true);
-        setStatus('navbar is-transparent   bg-purple-200');
+        setStatus('navbar is-transparent  has-background-light back');
       }
       setScrollTop(currentPosition <= 0 ? 0 : currentPosition);
     }
@@ -33,7 +34,7 @@ function Navbar(){
   }, [scrollTop]);
 return(
   
-    <div className="">
+    <div className="bg-purple-100">
     <nav className={status}  data-aos="fade-down"  data-aos-duration="2000">
       <div className="container md:py-4">
   <div className="navbar-brand md:w-64 h-16">
@@ -92,7 +93,7 @@ return(
           <p className="control">
           
             <a className="bg-purple-900 px-4 text-gray-100 font-bold md:w-32 py-2 rounded-full shadow-lg">
-            <strong>Get started </strong>
+            <strong>Donate </strong>
           </a>
          
           </p>
