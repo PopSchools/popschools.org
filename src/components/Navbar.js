@@ -19,7 +19,7 @@ function Navbar(){
       if (currentPosition > 220) {
         // downscroll code
         console.log(currentPosition)
-        // setScrolling(true);
+        setScrolling(true);
         setStatus('navbar is-transparent bg-white  is-fixed-top bg-purple-100 shadow ');
       } else {
         // upscroll code
@@ -50,38 +50,19 @@ return(
 
   <div id="navbarExampleTransparentExample" className="navbar-menu">
     <div className="navbar-start">
-      <a className="navbar-item" href="https://bulma.io/">
-        Home 
+      <a className="navbar-item text-gray-600 text-md font-bold " href="https://bulma.io/">
+        Home
       </a>
-      <div className="navbar-item has-dropdown is-hoverable">
-        <a className="navbar-link" href="https://bulma.io/documentation/overview/start/">
-          Docs
-        </a>
-        <div className="navbar-dropdown is-boxed">
-          <a className="navbar-item" href="https://bulma.io/documentation/overview/start/">
-            Overview
-          </a>
-          <a className="navbar-item" href="https://bulma.io/documentation/overview/modifiers/">
-            Modifiers
-          </a>
-          <a className="navbar-item" href="https://bulma.io/documentation/columns/basics/">
-            Columns
-          </a>
-          <a className="navbar-item" href="https://bulma.io/documentation/layout/container/">
-            Layout
-          </a>
-          <a className="navbar-item" href="https://bulma.io/documentation/form/general/">
-            Form
-          </a>
-          <hr className="navbar-divider"/>
-          <a className="navbar-item" href="https://bulma.io/documentation/elements/box/">
-            Elements
-          </a>
-          <a className="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/">
-            Components
-          </a>
-        </div>
-      </div>
+       <a className="navbar-item text-gray-600 text-md font-bold " href="https://bulma.io/">
+        About
+      </a>
+     
+       <a className="navbar-item text-gray-600 text-md font-bold" href="https://bulma.io/">
+        Sponsors
+      </a>
+      <a className="navbar-item text-md font-bold" href="https://bulma.io/">
+        Contributors
+      </a>
     </div>
 
     <div className="navbar-end">
@@ -93,7 +74,7 @@ return(
           <p className="control">
           
             <a className="bg-purple-900 px-4 text-gray-100 font-bold md:w-32 py-2 rounded-full shadow-lg">
-            <strong>Donate </strong>
+            <strong>Become a Sponsor </strong>
           </a>
          
           </p>
