@@ -13,7 +13,7 @@ function Footer(){
 
                 <div className="flex flex-wrap">
                     <div className="w-full md:w-1/3">
-                     <img src={Logo}  className="w-32 h-32"/>
+                     <img src={Logo}  className="w-64 h-32"/>
                     </div>
 
                     <div className="w-full md:w-2/3">
