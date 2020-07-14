@@ -115,8 +115,8 @@ I recognize from experience the extra effort it takes to get a great start when 
 
 When you sponsor me, you allow me the mental space to do my work to the best of my ability.</p>
 <p className="text-gray-700 text-2xl font-bold pt-8">- Nikema Prophet</p>
-<a href="https://github.com/PopSchools/popschools.org"><span className=" px-3 text-gray-600 text-2xl"><GithubFilled /></span> </a>
-            <a href=""><span className="px-3 text-gray-600 text-2xl"><TwitterCircleFilled /></span></a>
+<a href="https://github.com/PopSchools/popschools.org"><span className=" px-3 text-gray-600 text-2xl inline-block mr-2"><GithubFilled /></span> </a>
+<a href=""><span className="px-3 text-gray-600 text-2xl inline-block"><TwitterCircleFilled /></span></a>
 
          </div>
      </div>

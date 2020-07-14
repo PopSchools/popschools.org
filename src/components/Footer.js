@@ -58,9 +58,9 @@ function Footer(){
                                 <p className="text-gray-600 py-4 px-3">Follow us on our social media</p>
                                 <hr/>
 
-                               <a href="https://github.com/PopSchools/popschools.org"><span className=" px-3 text-purple-600 text-4xl"><GithubFilled /></span> </a>
-                               <span className="px-3 text-purple-600 text-4xl"><TwitterCircleFilled /></span> 
-                               <span className="px-3 text-purple-600 text-4xl"><FacebookFilled /></span>
+                               <a href="https://github.com/PopSchools/popschools.org"><span className=" px-3 text-purple-600 text-4xl inline-block"><GithubFilled /></span> </a>
+                               <span className="px-3 text-purple-600 text-4xl inline-block"><TwitterCircleFilled /></span> 
+                               <span className="px-3 text-purple-600 text-4xl inline-block"><FacebookFilled /></span>
                             </div>
 
                         </div>
