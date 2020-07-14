@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Navbar from './Navbar';
 import '../css/tailwind.css';
 import '../App.css';
+import 'bulma/css/bulma.css'
 import Homeimage from '../image/home.jpeg';
 import {AnimatedOnScroll} from "react-animated-css-onscroll";
 import {CheckCircleFilled,GithubFilled,InteractionFilled,TwitterCircleFilled,FacebookFilled} from '@ant-design/icons';

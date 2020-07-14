@@ -3,7 +3,7 @@ import Logo from '../image/logo.png';
 import '../css/tailwind.css';
 import '../App.css';
 import {GithubFilled,TwitterCircleFilled,FacebookFilled  } from '@ant-design/icons';
-
+import 'bulma/css/bulma.css'
 function Footer(){
     return(
         <>
