@@ -1,3 +1,6 @@
+.imgrotate {
+  transform: rotate(6deg);
+}
 .App {
   text-align: center;
 }
@@ -6,6 +9,20 @@ body{
   font-family: 'Roboto', sans-serif;
   overflow-x: hidden; 
  
+}
+.mtop{
+  background-image: url('./image/main_top.png');
+  /* background-size: cover; */
+  background-repeat:no-repeat;
+
+}
+
+.btop{
+  background-image: url('./image/main_top.png');
+  /* background-size: cover; */
+  background-repeat:no-repeat;
+  /* transform: rotate(90deg); */
+
 }
 .bgpro{
   background-image: url('./image/login_bottom.png');

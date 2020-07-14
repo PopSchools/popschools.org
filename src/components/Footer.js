@@ -7,13 +7,13 @@ import {GithubFilled,TwitterCircleFilled,FacebookFilled  } from '@ant-design/ico
 function Footer(){
     return(
         <>
-        <div className="">
+        <div className="mtop">
 
             <div className="container py-8">
 
-                <div className="flex flex-wrap">
-                    <div className="w-full md:w-1/3">
-                     <img src={Logo}  className="w-64 h-32"/>
+                <div className="flex flex-wrap ">
+                    <div className="w-full md:w-1/3 ">
+                     <img src={Logo}  className="w-64 "/>
                     </div>
 
                     <div className="w-full md:w-2/3">

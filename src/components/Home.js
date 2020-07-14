@@ -98,8 +98,8 @@ function Home(){
     </div>
 </div>
  {/* Meet founder */}
- <div className="container rounded-lg py-16">
- <p className=" text-center text-2xl font-extrabold text-gray-900">Meet our Founder</p>
+ <div className="container rounded-lg py-16 btop">
+ <p className=" text-center text-2xl font-extrabold text-gray-600">Meet our Founder</p>
         <center><hr className="w-48"/></center> 
      <div className="grid md:grid-cols-2">
          <div className="py-4 px-12 float-right">
@@ -124,6 +124,211 @@ When you sponsor me, you allow me the mental space to do my work to the best of 
         {/* Sponsors */}
 
         {/* Contributors */}
+
+        <div className="container bg-gray-100 py-4 px-3 rounded-lg">
+        <p className=" text-center text-2xl font-extrabold text-purple-700">Contributors</p>
+        <center><hr className="w-48"/></center> 
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {/* card==for contact */}
+                <div className="bg-white rounded-md">
+                   
+                        <div className="flex flex-wrap">
+                            <div className="w-2/3 md:w-2/3">
+                              <p className="text-sm font-bold px-4 pt-4  ">Nikema Prophet </p>
+                              <p className="text-sm text-gray-600 px-4   ">Software developer</p>
+                            </div>
+                            <div className="w-1/3 md:w-1/3 ">
+                            <div className="py-4">
+                            <img src={about} className=" ml-8 md:ml-8   w-10 h-10 rounded-full shadow border-4 border-purple-600 " />
+                            </div>
+                           
+                            </div>
+                            <hr className="bg-purple-800"/>
+
+                            <div className="py-4">
+                            <a href="https://github.com/PopSchools/popschools.org"><span className=" px-3 text-gray-600 text-2xl"><GithubFilled /></span> </a>
+                            <a href=""><span className="px-3 text-gray-600 text-2xl"><TwitterCircleFilled /></span></a>
+                            </div>
+                        </div>
+                    
+                 
+                </div>
+                {/* endbx */}
+                <div className="bg-white rounded-md">
+                   
+                        <div className="flex flex-wrap">
+                            <div className="w-2/3 md:w-2/3">
+                              <p className="text-sm font-bold px-4 pt-4  ">Nikema Prophet </p>
+                              <p className="text-sm text-gray-600 px-4   ">Software developer</p>
+                            </div>
+                            <div className="w-1/3 md:w-1/3 ">
+                            <div className="py-4">
+                            <img src={about} className=" ml-8 md:ml-8   w-10 h-10 rounded-full shadow border-4 border-purple-600 " />
+                            </div>
+                           
+                            </div>
+                            <hr className="bg-purple-800"/>
+
+                            <div className="py-4">
+                            <a href="https://github.com/PopSchools/popschools.org"><span className=" px-3 text-gray-600 text-2xl"><GithubFilled /></span> </a>
+                            <a href=""><span className="px-3 text-gray-600 text-2xl"><TwitterCircleFilled /></span></a>
+                            </div>
+                        </div>
+                    
+                 
+                </div>
+                {/* end box */}
+                <div className="bg-white rounded-md">
+                   
+                        <div className="flex flex-wrap">
+                            <div className="w-2/3 md:w-2/3">
+                              <p className="text-sm font-bold px-4 pt-4  ">Nikema Prophet </p>
+                              <p className="text-sm text-gray-600 px-4   ">Software developer</p>
+                            </div>
+                            <div className="w-1/3 md:w-1/3 ">
+                            <div className="py-4">
+                            <img src={about} className=" ml-8 md:ml-8   w-10 h-10 rounded-full shadow border-4 border-purple-600 " />
+                            </div>
+                           
+                            </div>
+                            <hr className="bg-purple-800"/>
+
+                            <div className="py-4">
+                            <a href="https://github.com/PopSchools/popschools.org"><span className=" px-3 text-gray-600 text-2xl"><GithubFilled /></span> </a>
+                            <a href=""><span className="px-3 text-gray-600 text-2xl"><TwitterCircleFilled /></span></a>
+                            </div>
+                        </div>
+                    
+                 
+                </div>
+                {/* end box */}
+                <div className="bg-white rounded-md">
+                   
+                        <div className="flex flex-wrap">
+                            <div className="w-2/3 md:w-2/3">
+                              <p className="text-sm font-bold px-4 pt-4  ">Nikema Prophet </p>
+                              <p className="text-sm text-gray-600 px-4   ">Software developer</p>
+                            </div>
+                            <div className="w-1/3 md:w-1/3 ">
+                            <div className="py-4">
+                            <img src={about} className=" ml-8 md:ml-8   w-10 h-10 rounded-full shadow border-4 border-purple-600 " />
+                            </div>
+                           
+                            </div>
+                            <hr className="bg-purple-800"/>
+
+                            <div className="py-4">
+                            <a href="https://github.com/PopSchools/popschools.org"><span className=" px-3 text-gray-600 text-2xl"><GithubFilled /></span> </a>
+                            <a href=""><span className="px-3 text-gray-600 text-2xl"><TwitterCircleFilled /></span></a>
+                            </div>
+                        </div>
+                    
+                 
+                </div>
+                {/* endbox */}
+                 {/* card==for contact */}
+                 <div className="bg-white rounded-md">
+                   
+                   <div className="flex flex-wrap">
+                       <div className="w-2/3 md:w-2/3">
+                         <p className="text-sm font-bold px-4 pt-4  ">Nikema Prophet </p>
+                         <p className="text-sm text-gray-600 px-4   ">Software developer</p>
+                       </div>
+                       <div className="w-1/3 md:w-1/3 ">
+                       <div className="py-4">
+                       <img src={about} className=" ml-8 md:ml-8   w-10 h-10 rounded-full shadow border-4 border-purple-600 " />
+                       </div>
+                      
+                       </div>
+                       <hr className="bg-purple-800"/>
+
+                       <div className="py-4">
+                       <a href="https://github.com/PopSchools/popschools.org"><span className=" px-3 text-gray-600 text-2xl"><GithubFilled /></span> </a>
+                       <a href=""><span className="px-3 text-gray-600 text-2xl"><TwitterCircleFilled /></span></a>
+                       </div>
+                   </div>
+               
+            
+           </div>
+           {/* endbx */}
+           <div className="bg-white rounded-md">
+              
+                   <div className="flex flex-wrap">
+                       <div className="w-2/3 md:w-2/3">
+                         <p className="text-sm font-bold px-4 pt-4  ">Nikema Prophet </p>
+                         <p className="text-sm text-gray-600 px-4   ">Software developer</p>
+                       </div>
+                       <div className="w-1/3 md:w-1/3 ">
+                       <div className="py-4">
+                       <img src={about} className=" ml-8 md:ml-8   w-10 h-10 rounded-full shadow border-4 border-purple-600 " />
+                       </div>
+                      
+                       </div>
+                       <hr className="bg-purple-800"/>
+
+                       <div className="py-4">
+                       <a href="https://github.com/PopSchools/popschools.org"><span className=" px-3 text-gray-600 text-2xl"><GithubFilled /></span> </a>
+                       <a href=""><span className="px-3 text-gray-600 text-2xl"><TwitterCircleFilled /></span></a>
+                       </div>
+                   </div>
+               
+            
+           </div>
+           {/* end box */}
+           <div className="bg-white rounded-md">
+              
+                   <div className="flex flex-wrap">
+                       <div className="w-2/3 md:w-2/3">
+                         <p className="text-sm font-bold px-4 pt-4  ">Nikema Prophet </p>
+                         <p className="text-sm text-gray-600 px-4   ">Software developer</p>
+                       </div>
+                       <div className="w-1/3 md:w-1/3 ">
+                       <div className="py-4">
+                       <img src={about} className=" ml-8 md:ml-8   w-10 h-10 rounded-full shadow border-4 border-purple-600 " />
+                       </div>
+                      
+                       </div>
+                       <hr className="bg-purple-800"/>
+
+                       <div className="py-4">
+                       <a href="https://github.com/PopSchools/popschools.org"><span className=" px-3 text-gray-600 text-2xl"><GithubFilled /></span> </a>
+                       <a href=""><span className="px-3 text-gray-600 text-2xl"><TwitterCircleFilled /></span></a>
+                       </div>
+                   </div>
+               
+            
+           </div>
+           {/* end box */}
+           <div className="bg-white rounded-md">
+              
+                   <div className="flex flex-wrap">
+                       <div className="w-2/3 md:w-2/3">
+                         <p className="text-sm font-bold px-4 pt-4  ">Nikema Prophet </p>
+                         <p className="text-sm text-gray-600 px-4   ">Software developer</p>
+                       </div>
+                       <div className="w-1/3 md:w-1/3 ">
+                       <div className="py-4">
+                       <img src={about} className=" ml-8 md:ml-8   w-10 h-10 rounded-full shadow border-4 border-purple-600 " />
+                       </div>
+                      
+                       </div>
+                       <hr className="bg-purple-800"/>
+
+                       <div className="py-4">
+                       <a href="https://github.com/PopSchools/popschools.org"><span className=" px-3 text-gray-600 text-2xl"><GithubFilled /></span> </a>
+                       <a href=""><span className="px-3 text-gray-600 text-2xl"><TwitterCircleFilled /></span></a>
+                       </div>
+                   </div>
+               
+            
+           </div>
+           {/* endbox */}
+
+
+
+            </div>
+
+        </div>
 
  {/* footer */}
  <Footer/>
