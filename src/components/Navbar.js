@@ -36,7 +36,7 @@ return(
   
     <div className="bg-purple-100">
     <nav className={status}  data-aos="fade-down"  data-aos-duration="2000">
-      <div className="container-lg md:py-4">
+      <div className="container md:py-4">
   <div className="navbar-brand md:w-64 h-16">
     <a className="navbar-item" href="https://bulma.io">
       <img src={Logo} alt="logo" />
