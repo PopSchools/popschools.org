@@ -75,7 +75,8 @@ body{
   flex-grow: 1;
   margin: 0 auto;
   position: relative;
-  width: auto; }
+  width: auto;
+ }
   .container.is-fluid {
     max-width: none;
     padding-left: 32px;
