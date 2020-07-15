@@ -83,7 +83,7 @@ function Home(){
             </div>
         </div>
         {/* About us */}
-<div className="bg-purple-600">
+<div className="bg-purple-600" id="about">
     <div className="grid md:grid-cols-2 gap-4 px-12">
     <div className="">
             <img src={bak}  className="px-4 w-32 h-32"/>
@@ -125,7 +125,7 @@ When you sponsor me, you allow me the mental space to do my work to the best of 
 
  </div>
         {/* Sponsors */}
-        <div className=" py-8 bg-purple-400">
+        <div className=" py-8 bg-purple-400" id="sponsors">
           <div className="container">
           <p className=" text-center text-2xl font-extrabold text-gray-600">Our Sponsors</p>
            <center><hr className="w-48"/></center> 
@@ -275,7 +275,7 @@ When you sponsor me, you allow me the mental space to do my work to the best of 
 
         {/* Contributors */}
 
-        <div className="container bg-gray-100 py-4 px-3 rounded-lg">
+        <div className="container bg-gray-100 py-4 px-3 rounded-lg" id="contributos">
         <p className=" text-center text-2xl font-extrabold text-purple-700">Contributors</p>
         <center><hr className="w-48"/></center> 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">

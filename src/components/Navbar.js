@@ -77,17 +77,17 @@ return(
 
   <div className={isOpen}  ref={ref}>
     <div className="navbar-start">
-      <a className="navbar-item text-gray-600 text-md font-bold " href="https://bulma.io/">
+      <a className="navbar-item text-gray-600 text-md font-bold " href="/">
         Home
       </a>
-       <a className="navbar-item text-gray-600 text-md font-bold " href="https://bulma.io/">
+       <a className="navbar-item text-gray-600 text-md font-bold " href="#about">
         About
       </a>
      
-       <a className="navbar-item text-gray-600 text-md font-bold" href="https://bulma.io/">
+       <a className="navbar-item text-gray-600 text-md font-bold" href="#sponsors">
         Sponsors
       </a>
-      <a className="navbar-item text-md font-bold" href="https://bulma.io/">
+      <a className="navbar-item text-md font-bold" href="#contibutors">
         Contributors
       </a>
     </div>
@@ -100,7 +100,7 @@ return(
           </p>
           <p className="control">
           
-            <a className="bg-purple-900 px-4 text-gray-100 font-bold md:w-32 py-2 rounded-full shadow-lg">
+          <a href="https://www.mutualaid.fund" className="bg-purple-900 px-4 text-gray-100 font-bold md:w-32 py-2 rounded-full shadow-lg">
             <strong>Become a sponsor </strong>
           </a>
          
