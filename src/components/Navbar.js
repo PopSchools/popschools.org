@@ -65,7 +65,7 @@ return(
     <nav className={status}  data-aos="fade-down"  data-aos-duration="2000">
       <div className="container md:py-4">
   <div className="navbar-brand md:w-64 h-16">
-    <a className="navbar-item" href="https://bulma.io">
+    <a className="navbar-item" href="/">
       <img src={Logo} alt="logo" />
     </a>
     <div  className="navbar-burger burger" onClick={() => setIsOpen('block')}>
