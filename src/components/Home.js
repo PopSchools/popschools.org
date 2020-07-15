@@ -11,6 +11,7 @@ import bak from '../image/bak.svg';
 import Footer from './Footer';
 import 'uikit/dist/css/uikit.css';
 import 'uikit/dist/js/uikit';
+
 function Home(){
     return (
         <div>
