@@ -5,7 +5,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import 'bulma/css/bulma.css'
 import '../App.css';
-
+import Scrollchor from 'react-scrollchor';
 
 AOS.init();
 function Navbar(){
@@ -80,16 +80,20 @@ return(
       <a className="navbar-item text-gray-600 text-md font-bold " href="/">
         Home
       </a>
-       <a className="navbar-item text-gray-600 text-md font-bold " href="#about">
+
+      <Scrollchor to="#about" className="navbar-item text-gray-600 text-md font-bold">
+    
         About
-      </a>
+      </Scrollchor>
      
-       <a className="navbar-item text-gray-600 text-md font-bold" href="#sponsors">
-        Sponsors
-      </a>
-      <a className="navbar-item text-md font-bold" href="#contributors">
-        Contributors
-      </a>
+      <Scrollchor to="#sponsors" className="navbar-item text-gray-600 text-md font-bold">
+    
+    Sponsors
+  </Scrollchor>
+  <Scrollchor to="#contributors" className="navbar-item text-gray-600 text-md font-bold">
+    
+    Contributors
+  </Scrollchor>
     </div>
 
     <div className="navbar-end">
