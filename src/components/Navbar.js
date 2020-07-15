@@ -87,7 +87,7 @@ return(
        <a className="navbar-item text-gray-600 text-md font-bold" href="#sponsors">
         Sponsors
       </a>
-      <a className="navbar-item text-md font-bold" href="#contibutors">
+      <a className="navbar-item text-md font-bold" href="#contributors">
         Contributors
       </a>
     </div>

@@ -83,8 +83,8 @@ function Home(){
             </div>
         </div>
         {/* About us */}
-<div className="bg-purple-600" id="about">
-    <div className="grid md:grid-cols-2 gap-4 px-12">
+<div className="bg-purple-600" id="about" >
+    <div className="grid md:grid-cols-2 gap-4 px-12"  data-aos="zoom-in-down" data-aos-duration="1500">
     <div className="">
             <img src={bak}  className="px-4 w-32 h-32"/>
             <p className="px-4 text-gray-200 text-md py-2 prose ">
@@ -275,7 +275,7 @@ When you sponsor me, you allow me the mental space to do my work to the best of 
 
         {/* Contributors */}
 
-        <div className="container bg-gray-100 py-4 px-3 rounded-lg" id="contributos">
+        <div className="container bg-gray-100 py-8 mt-8 px-3 rounded-lg" id="contributors" data-aos="zoom-in-down" data-aos-duration="1500">
         <p className=" text-center text-2xl font-extrabold text-purple-700">Contributors</p>
         <center><hr className="w-48"/></center> 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
