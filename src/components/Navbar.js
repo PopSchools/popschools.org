@@ -1,16 +1,43 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState,useEffect,useRef } from 'react';
 import Logo from '../image/logo.png';
 import '../css/tailwind.css'; 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import 'bulma/css/bulma.css'
 import '../App.css';
+
+
 AOS.init();
 function Navbar(){
+  const ref = useRef();
+  const [isOpen, setIsOpen] = useState('navbar-menu')
   const [scrolling, setScrolling] = useState(false);
   const [scrollTop, setScrollTop] = useState(0);
   const [status, setStatus] =useState('navbar is-transparent has-background-light back ');
+  function useOnClickOutside(ref, handler) {
+    useEffect(
+      () => {
+        const listener = event => {
+          // Do nothing if clicking ref's element or descendent elements
+          if (!ref.current || ref.current.contains(event.target)) {
+            return;
+          }
   
+          handler(event);
+        };
+  
+        document.addEventListener('mousedown', listener);
+        document.addEventListener('touchstart', listener);
+  
+        return () => {
+          document.removeEventListener('mousedown', listener);
+          document.removeEventListener('touchstart', listener);
+        };
+      },
+      [ref, handler]
+    );
+  }
+  useOnClickOutside(ref, () => setIsOpen('navbar-menu'));
 
 
   useEffect(() => {
@@ -41,14 +68,14 @@ return(
     <a className="navbar-item" href="https://bulma.io">
       <img src={Logo} alt="logo" />
     </a>
-    <div className="navbar-burger burger" data-target="navbarExampleTransparentExample">
+    <div  className="navbar-burger burger" onClick={() => setIsOpen('block')}>
       <span></span>
       <span></span>
       <span></span>
     </div>
   </div>
 
-  <div id="navbarExampleTransparentExample" className="navbar-menu">
+  <div className={isOpen}  ref={ref}>
     <div className="navbar-start">
       <a className="navbar-item text-gray-600 text-md font-bold " href="https://bulma.io/">
         Home
@@ -74,7 +101,7 @@ return(
           <p className="control">
           
             <a className="bg-purple-900 px-4 text-gray-100 font-bold md:w-32 py-2 rounded-full shadow-lg">
-            <strong>Become a Sponsor </strong>
+            <strong>Become a sponsor </strong>
           </a>
          
           </p>

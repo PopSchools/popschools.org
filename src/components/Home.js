@@ -5,10 +5,12 @@ import '../App.css';
 import 'bulma/css/bulma.css'
 import Homeimage from '../image/home.jpeg';
 import {AnimatedOnScroll} from "react-animated-css-onscroll";
-import {CheckCircleFilled,GithubFilled,InteractionFilled,TwitterCircleFilled,FacebookFilled} from '@ant-design/icons';
+import {CheckCircleFilled,GithubFilled,InteractionFilled,TwitterCircleFilled,FacebookFilled,RightOutlined,LeftOutlined} from '@ant-design/icons';
 import about from '../image/home.jpeg';
 import bak from '../image/bak.svg';
 import Footer from './Footer';
+import 'uikit/dist/css/uikit.css';
+import 'uikit/dist/js/uikit';
 function Home(){
     return (
         <div>
@@ -109,7 +111,7 @@ function Home(){
          <div>
          
 
-         <p className="text-lg text-gray-600 px-3 py-4 " data-aos="fade-left">My work is about creating opportunities for technologists like myself who are just getting started in their tech careers.
+         <p className="text-lg text-gray-600 px-3 py-4 prose " data-aos="fade-left">My work is about creating opportunities for technologists like myself who are just getting started in their tech careers.
 
 I recognize from experience the extra effort it takes to get a great start when you are dealing with financial hardships and a number of non-negotiable adult responsibilities.
 
@@ -123,6 +125,153 @@ When you sponsor me, you allow me the mental space to do my work to the best of 
 
  </div>
         {/* Sponsors */}
+        <div className=" py-8 bg-purple-400">
+          <div className="container">
+          <p className=" text-center text-2xl font-extrabold text-gray-600">Our Sponsors</p>
+           <center><hr className="w-48"/></center> 
+          </div>
+  <div uk-slider="center: true" >
+  
+    <div className="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+
+       <ul className="uk-slider-items uk-child-width-1-5@s uk-grid">
+      
+          <li >
+              <div className="bg-gray-200 rounded-lg shadow">
+                <a href=""> <div className=" ">
+                      <div className="rounded-lg" uk-scrollspy-class="uk-animation-slide-top">
+                          <img className="rounded-t-lg md:h-64" src={about} width="100%" />
+                       
+                      </div>
+                      <div className=" rounded-lg uk-animation-slide-left-small mt-2 mb-4 ">
+                          <p className="text-gray-700 text-center text-sm px-2 py-2 font-bold">@Company</p>
+                     
+                       
+                      </div>
+                      
+                      </div></a> 
+              </div>
+          </li>
+          <li >
+              <div className="bg-gray-200 rounded-lg shadow">
+                <a href=""> <div className=" ">
+                      <div className="rounded-lg" uk-scrollspy-class="uk-animation-slide-top">
+                          <img className="rounded-t-lg md:h-64" src={about} width="100%" />
+                       
+                      </div>
+                      <div className=" rounded-lg uk-animation-slide-left-small mt-2 mb-4 ">
+                          <p className="text-gray-700 text-center text-sm px-2 py-2 font-bold">@Company</p>
+                     
+                       
+                      </div>
+                      
+                      </div></a> 
+              </div>
+          </li> <li >
+              <div className="bg-gray-200 rounded-lg shadow">
+                <a href=""> <div className=" ">
+                      <div className="rounded-lg" uk-scrollspy-class="uk-animation-slide-top">
+                          <img className="rounded-t-lg md:h-64" src={about} width="100%" />
+                       
+                      </div>
+                      <div className=" rounded-lg uk-animation-slide-left-small mt-2 mb-4 ">
+                          <p className="text-gray-700 text-center text-sm px-2 py-2 font-bold">@Company</p>
+                     
+                       
+                      </div>
+                      
+                      </div></a> 
+              </div>
+          </li> <li >
+              <div className="bg-gray-200 rounded-lg shadow">
+                <a href=""> <div className=" ">
+                      <div className="rounded-lg" uk-scrollspy-class="uk-animation-slide-top">
+                          <img className="rounded-t-lg md:h-64" src={about} width="100%" />
+                       
+                      </div>
+                      <div className=" rounded-lg uk-animation-slide-left-small mt-2 mb-4 ">
+                          <p className="text-gray-700 text-center text-sm px-2 py-2 font-bold">@Company</p>
+                     
+                       
+                      </div>
+                      
+                      </div></a> 
+              </div>
+          </li> <li >
+              <div className="bg-gray-200 rounded-lg shadow">
+                <a href=""> <div className=" ">
+                      <div className="rounded-lg" uk-scrollspy-class="uk-animation-slide-top">
+                          <img className="rounded-t-lg md:h-64" src={about} width="100%" />
+                       
+                      </div>
+                      <div className=" rounded-lg uk-animation-slide-left-small mt-2 mb-4 ">
+                          <p className="text-gray-700 text-center text-sm px-2 py-2 font-bold">@Company</p>
+                     
+                       
+                      </div>
+                      
+                      </div></a> 
+              </div>
+          </li> <li >
+              <div className="bg-gray-200 rounded-lg shadow">
+                <a href=""> <div className=" ">
+                      <div className="rounded-lg" uk-scrollspy-class="uk-animation-slide-top">
+                          <img className="rounded-t-lg md:h-64" src={about} width="100%" />
+                       
+                      </div>
+                      <div className=" rounded-lg uk-animation-slide-left-small mt-2 mb-4 ">
+                          <p className="text-gray-700 text-center text-sm px-2 py-2 font-bold">@Company</p>
+                     
+                       
+                      </div>
+                      
+                      </div></a> 
+              </div>
+          </li> <li >
+              <div className="bg-gray-200 rounded-lg shadow">
+                <a href=""> <div className=" ">
+                      <div className="rounded-lg" uk-scrollspy-class="uk-animation-slide-top">
+                          <img className="rounded-t-lg md:h-64" src={about} width="100%" />
+                       
+                      </div>
+                      <div className=" rounded-lg uk-animation-slide-left-small mt-2 mb-4 ">
+                          <p className="text-gray-700 text-center text-sm px-2 py-2 font-bold">@Company</p>
+                     
+                       
+                      </div>
+                      
+                      </div></a> 
+              </div>
+          </li> <li >
+              <div className="bg-gray-200 rounded-lg shadow">
+                <a href=""> <div className=" ">
+                      <div className="rounded-lg" uk-scrollspy-class="uk-animation-slide-top">
+                          <img className="rounded-t-lg md:h-64" src={about} width="100%" />
+                       
+                      </div>
+                      <div className=" rounded-lg uk-animation-slide-left-small mt-2 mb-4 ">
+                          <p className="text-gray-700 text-center text-sm px-2 py-2 font-bold">@Company</p>
+                     
+                       
+                      </div>
+                      
+                      </div></a> 
+              </div>
+          </li>
+         
+          
+          </ul>
+         <a className="uk-position-center-left uk-position-small uk-hidden-hover bg-purple-600 text-white font-bold rounded-full shadow h-8 w-8 px-3 " href="#"  uk-slider-item="previous"><LeftOutlined /></a>
+         <a className="uk-position-center-right uk-position-small uk-hidden-hover bg-purple-600 text-white font-bold rounded-full shadow h-8 w-8 px-3" href="#" uk-slider-item="next"><RightOutlined /></a>
+     </div>
+
+      <ul className="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+  </div>
+  </div>
+
+
+        {/* end sponsors */}
 
         {/* Contributors */}
 
