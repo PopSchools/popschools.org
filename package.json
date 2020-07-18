@@ -1,37 +1,45 @@
 {
-  "name": "bulma-start",
-  "version": "0.0.4",
-  "description": "Start package for Bulma",
-  "keywords": [
-    "sass",
-    "bulma",
-    "css",
-    "start"
-  ],
-  "author": "Jeremy Thomas <bbxdesign@gmail.com> (http://jgthms.com)",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jgthms/bulma-start.git"
-  },
-  "license": "MIT",
-  "devDependencies": {
-    "autoprefixer": "^9.7.6",
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-es2015-ie": "^6.7.0",
-    "bulma": "^0.8.2",
-    "node-sass": "^4.13.1",
-    "npm-run-all": "^4.1.5",
-    "postcss-cli": "^7.1.0"
+  "name": "popschools",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@ant-design/icons": "^4.2.1",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "aos": "^2.3.4",
+    "autoprefixer": "^9.8.4",
+    "bulma": "^0.9.0",
+    "node-sass": "^4.14.1",
+    "postcss-cli": "^7.1.1",
+    "react": "^16.13.1",
+    "react-animated-css-onscroll": "^1.2.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "react-scrollchor": "^6.0.0",
+    "tailwindcss": "^1.4.6",
+    "uikit": "^3.5.4"
   },
   "scripts": {
-    "css-deploy": "npm run css-build && npm run css-postcss",
-    "css-build": "node-sass _sass/main.scss css/main.css",
-    "css-postcss": "postcss --use autoprefixer --output css/main.css css/main.css",
-    "css-watch": "npm run css-build -- --watch",
-    "deploy": "npm run css-deploy && npm run js-build",
-    "js-build": "babel _javascript --out-dir lib",
-    "js-watch": "npm run js-build -- --watch",
-    "start": "npm-run-all --parallel css-watch js-watch"
+    "start": "react-scripts start",
+    "build": "CI= react-scripts build ",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
