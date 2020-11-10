@@ -25,7 +25,7 @@ body{
 
 }
 .bgpro{
-  background-image: url('./image/login_bottom.png');
+  background-image: url('./image/bg.png');
   background-size: cover;
   background-repeat:no;
 }

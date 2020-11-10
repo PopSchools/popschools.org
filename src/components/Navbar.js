@@ -6,6 +6,7 @@ import 'aos/dist/aos.css';
 import 'bulma/css/bulma.css'
 import '../App.css';
 import Scrollchor from 'react-scrollchor';
+import { HiMenuAlt3 } from "react-icons/hi";
 
 AOS.init();
 function Navbar(){
@@ -13,7 +14,8 @@ function Navbar(){
   const [isOpen, setIsOpen] = useState('navbar-menu')
   const [scrolling, setScrolling] = useState(false);
   const [scrollTop, setScrollTop] = useState(0);
-  const [status, setStatus] =useState('navbar is-transparent has-background-light back ');
+  const [status, setStatus] =useState('navbar is-transparent has-background-white back ');
+  const [toggle,setToggle]=useState(0);
   function useOnClickOutside(ref, handler) {
     useEffect(
       () => {
@@ -37,8 +39,16 @@ function Navbar(){
       [ref, handler]
     );
   }
-  useOnClickOutside(ref, () => setIsOpen('navbar-menu'));
-
+  useOnClickOutside(ref, () => setIsOpen('navbar-menu '));
+  const handleToggle =()=>{
+    if(toggle===0){
+      setIsOpen('block');
+      setToggle(1)
+    }else{
+      setIsOpen('navbar-menu')
+      setToggle(0)
+    }
+  }
 
   useEffect(() => {
     function onScroll() {
@@ -47,11 +57,11 @@ function Navbar(){
         // downscroll code
         console.log(currentPosition)
         setScrolling(true);
-        setStatus('navbar is-transparent bg-white  is-fixed-top bg-purple-100 shadow ');
+        setStatus('navbar  has-background-white is-fixed-top shadow back');
       } else {
         // upscroll code
         setScrolling(true);
-        setStatus('navbar is-transparent  has-background-light back');
+        setStatus('navbar is-transparent has-background-white   back');
       }
       setScrollTop(currentPosition <= 0 ? 0 : currentPosition);
     }
@@ -61,18 +71,22 @@ function Navbar(){
   }, [scrollTop]);
 return(
   
-    <div className="bg-purple-100">
+    <div className="has-background-white">
     <nav className={status}  data-aos="fade-down"  data-aos-duration="2000">
       <div className="container md:py-4">
   <div className="navbar-brand md:w-64 h-16">
     <a className="navbar-item" href="/">
       <img src={Logo} alt="logo" />
     </a>
-    <div  className="navbar-burger burger" onClick={() => setIsOpen('block')}>
-      <span></span>
-      <span></span>
-      <span></span>
+    <div  className="navbar-burger burger" >
+      
     </div>
+    <div className="-mr-2 -my-2 md:hidden">
+        <button type="button" onClick={handleToggle} className="inline-flex items-center justify-center p-4 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
+
+          <HiMenuAlt3 size="2em"/>
+        </button>
+      </div>
   </div>
 
   <div className={isOpen}  ref={ref}>
@@ -99,16 +113,20 @@ return(
     <div className="navbar-end">
       <div className="navbar-item">
         <div className="field is-grouped">
-          <p className="control">
-           
-          </p>
-          <p className="control">
+         
+          <p className="control py-2">
           
-          <a href="https://www.mutualaid.fund" className="bg-purple-900 px-4 text-gray-100 font-bold md:w-32 py-2 rounded-full shadow-lg">
+          <a href="https://www.mutualaid.fund" className="bg-gray-900 no-underline px-4 text-gray-100 font-bold md:w-32 py-2 rounded-lg shadow-md">
             <strong>Become a sponsor </strong>
           </a>
          
           </p>
+          <div><a href="https://circle.popschools.com/c/welcome"><button class="bg-transparent hover:bg-gray-900 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-gray-500 hover:border-transparent rounded-lg">
+          Join our community
+        </button>
+        </a>
+
+       </div>
         </div>
       </div>
     </div>
