@@ -1,5 +1,7 @@
+# Popschools.org Website (WIP)
 
+We are in the process of relaunching PopSchools and building the community and codebase in public. 
 
-## Popschools designing process
+Eventually the popschools.org site will be an entry point to all things PopSchools. We are getting set up now to be able to accept code and content contributions.
 
-I am making  a sample design of Popschool -- all  ideas  to make it better are welcomed! 
+Sign up and [join our community](https://circle.popschools.com) if you would like to participate in our projects.
