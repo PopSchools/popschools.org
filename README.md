@@ -1,4 +1,4 @@
-# Popschools.org Website (WIP)
+# PopSchools.org Website (WIP)
 
 We are in the process of relaunching PopSchools and building the community and codebase in public. 
 
