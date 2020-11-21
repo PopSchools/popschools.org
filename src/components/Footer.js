@@ -1,10 +1,10 @@
-import React from "react";
-import Logo from "../image/logo.png";
-import "../css/tailwind.css";
-import "../App.css";
-import { GithubFilled, TwitterCircleFilled } from "@ant-design/icons";
+import React from 'react'
+import Logo from '../image/logo.png'
+import '../css/tailwind.css'
+import '../App.css'
+import { GithubFilled, TwitterCircleFilled } from '@ant-design/icons'
 // import 'bulma/css/bulma.css'
-function Footer() {
+function Footer () {
   return (
     <>
       <div className="mtop">
@@ -28,19 +28,27 @@ function Footer() {
                   <a href="https://github.com/PopSchools/popschools.org">
                     <span className=" px-3 text-gray-600 text-4xl inline-block">
                       <GithubFilled />
-                    </span>{" "}
+                    </span>{' '}
                   </a>
                   <a href="https://twitter.com/popschoolsorg">
                     <span className="px-3 text-gray-600 text-4xl inline-block">
                       <TwitterCircleFilled />
-                    </span>{" "}
+                    </span>{' '}
                   </a>
+                </div>
+
+                <div>
+                <p className="py-3 px-3 text-gray-600 font-bold">
+                   Code of Conduct
+                  </p>
+                  <a href="/codeofconduct"> <span className="px-3 py-4 text-gray-600 text-sm inline-block">View Code</span></a>
+
                 </div>
               </div>
               <div className="grid grid-cols-2 md:grid-cols-2">
                 <div className="py-6">
                   <span className="text-left text-gray-600 py-2 px-3">
-                    <span dangerouslySetInnerHTML={{ __html: "&copy;" }} />
+                    <span dangerouslySetInnerHTML={{ __html: '&copy;' }} />
                     {new Date().getFullYear()} PopSchools, Inc.
                   </span>
                 </div>
@@ -50,7 +58,7 @@ function Footer() {
         </div>
       </div>
     </>
-  );
+  )
 }
 
-export default Footer;
+export default Footer
