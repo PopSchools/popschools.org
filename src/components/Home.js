@@ -38,7 +38,7 @@ function Home() {
 
                   <div className="grid grid-cols-2 md:grid-cols-2 py-4 gap-4">
                     <div>
-                      <a href="https://circle.popschools.com/c/welcome">
+                      <a href="https://github.com/PopSchools/popschools.org/discussions">
                         <button class="bg-transparent hover:bg-gray-900 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-gray-500 hover:border-transparent rounded-lg">
                           Join our community
                         </button>
