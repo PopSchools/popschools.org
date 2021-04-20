@@ -70,3 +70,9 @@ body{
     transform: rotate(360deg);
   }
 }
+
+.codeconduct{
+  background-image: url('./image/Popschools.png');
+  background-size: cover;
+  
+}
